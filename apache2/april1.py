@@ -19,4 +19,13 @@ if random.randint(0, 10) > 6:
                 c = c.lower()
             page[i] = c
 
-sys.stdout.write(''.join(page).encode('utf-8'))
+page = ''.join(page)
+
+if random.randint(0, 10) > 6:
+    page = u'''
+<script>
+document.body.style.filter = "blur(1px)";
+</script>
+''' + page
+
+sys.stdout.write(page.encode('utf-8'))
