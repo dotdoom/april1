@@ -21,7 +21,7 @@ if random.randint(0, 10) > 6:
 
 page = ''.join(page)
 
-if random.randint(0, 10) > 6:
+if random.randint(0, 10) > 8:
     page = u'''
 <script>
 document.body.style.filter = "blur(1px)";
